@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.env
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.bak2
+.ipynb_checkpoints/
+Zone.Identifier
+*.Zone.Identifier
+
+# Build and distribution files
+*.egg-info/
+build/
+dist/
+mamba_install/build/
+mamba_install/*.egg-info/
+mamba_install/*.deb
+
+# Datasets and raw audio
+data/VoiceBank/
+data/vctk16/
+data/defence16/
+data/defence16_hard/
+data/vb_json/
+*.wav
+*.flac
+*.ogg
+*.zip
+*.tar.gz
+
+# Checkpoints and weights
+*.pth
+*.pt
+checkpoints/*.pth
+results/**/*.pth
+
+# Logs and results
+results/
+!results/score_ft_test2_normal.txt
+logs/
+events.out.tfevents.*
+wandb/
+tensorboard/
