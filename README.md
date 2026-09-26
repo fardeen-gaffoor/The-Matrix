@@ -61,11 +61,11 @@ See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the model, loss functions a
 
 ## Targets and results
 
-| Metric | Target  | Normal test set | Hard test set  |
-| ------ | ------- | --------------- | ---------------|
-| SNR    | > 15 dB | ✅ met (18.8)   | ✅ met (16db) |
-| STOI   | > 0.85  | ✅ met (0.943)  | ✅ met (0.90) |
-| PESQ   | > 2.5   | ✅ met (3.08)   | ✅ met (2.55) |
+| Metric | Target  | Normal test set | Hard test set   |
+| ------ | ------- | --------------- | ----------------|
+| SNR    | > 15 dB | ✅ met (18.8)   | ✅ met (15.5dB)|
+| STOI   | > 0.85  | ✅ met (0.943)  | ✅ met (0.90)  |
+| PESQ   | > 2.5   | ✅ met (3.08)   | ✅ met (2.55)  |
 
 The fine-tuned checkpoint `ft_test2` meets all targets on the normal test set. On the hard set, **impulsive military noise (`mad_*` categories)** remains the main open problem. Full per-category tables are in [docs/RESULTS.md](docs/RESULTS.md).
 
