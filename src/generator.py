@@ -58,7 +58,7 @@ class xLSTMSENet(nn.Module):
 
         # Apply Mamba blocks
         for block in self.TSxLSTM:
-            x = torch.utils.checkpoint.checkpoint(block, x, use_reentrant=False) if self.training else block(x)
+            x = block(x)
 
         # Decode magnitude and phase
         denoised_mag = rearrange(self.mask_decoder(x) * noisy_mag, 'b c t f -> b f t c').squeeze(-1)
